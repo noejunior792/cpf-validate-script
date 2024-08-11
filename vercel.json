@@ -1,15 +1,19 @@
 {
-    "version":2,
-    "builds":[
-        {
-            "src":"src/app.js",
-            "use":"@vercel/node"
-        }
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/routes/**/*.js",
+        "use": "@vercel/node"
+      }
     ],
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest":"src/app.js"
-        }
-    ]
-}
+    "routes": [
+      {
+        "src": "/api/cpf/validate",
+        "dest": "/src/routes/cpfRoutes.js"
+      }
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
+  
