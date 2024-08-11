@@ -60,5 +60,4 @@ curl -X POST http://localhost:3000/api/cpf/validate -H "Content-Type: applicatio
 
 ## Contribuindo 🔥
 
-Contribuindo
 Contribuições são bem-vindas! Por favor, envie um pull request ou abra uma issue para discutir mudanças que gostaria de fazer.
